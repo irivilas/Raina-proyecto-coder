@@ -1,0 +1,285 @@
+/** selector universal **/
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+/** estilos globales **/
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+    grid-template-columns: 100px 1fr 200px;
+    grid-template-rows: 100px 300px 1fr 20px;
+    grid-template-areas:
+        "nav header header"
+        "nav main main"
+        "nav main main"
+        "nav footer footer";
+
+}
+
+
+@media (max-width: 768px) {
+    body{
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 150px 2fr 2fr 10px;
+        grid-template-areas:
+            "nav header header "
+            "nav main main "
+            "nav main main "
+            "nav footer footer "
+            "nav footer footer ";
+
+    }
+}
+
+@media (max-width: 425px) {
+    body{
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 150px 2fr 2fr 10%;
+        grid-template-areas:
+            " header "
+            " nav "
+            " main "
+            "footer ";
+    }
+   
+}
+
+
+
+/** button **/
+
+.button {
+
+    color: #AEADD2;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    padding: 1px 2px;
+}
+
+/** icono wpp **/
+
+.wpp {
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+
+/** header **/
+header {
+    background-color: #AEADD2;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+
+
+}
+
+header .logo {
+    width: 80;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+header nav ul li {
+    padding: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+nav {
+    grid-area: nav;
+
+}
+
+
+main {
+    grid-area: main;
+}
+
+/** Portada **/
+
+
+#portada {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#portada h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#portada p {
+    text-align: center;
+    font-size: 2rem;
+    max-width: 80%;
+    margin: 40px 0;
+}
+
+.marca {
+    font-weight: bold;
+}
+
+#portada a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px
+}
+
+h2 {
+    color: #AEADD2
+}
+
+/** servicios **/
+
+#Servicios {
+    color: #DCC7CF;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#Servicios h3 {
+    text-align: center;
+}
+
+#Servicios h2 {
+    text-align: center;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    max-width: 1400px;
+}
+
+
+.cardServicio {
+    background-color: rgb(168, 166, 166);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    width: 250px;
+    padding: 30px;
+    margin: 0 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+
+
+/** footer **/
+
+footer {
+    background-color: rgb(168, 166, 166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: footer;
+    padding: 30px 0;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+}
+
+footer>div {
+    padding: 40px 0;
+}
+
+.footerEnlaces ul {
+    list-style: none;
+}
+
+.footerRedes {
+    width: 15%;
+}
+
+.footerRedes ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.footerEnlaces a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.footerColumns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 20px;
+
+
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.newsletter input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+.newsletter button {
+    margin-top: 15px;
+    border: none;
+
+}
+
+.copyright {
+    padding-top: 20px;
+    width: 100%;
+    border-top: 2px solid;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+/** Nosotros **/
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+
+}
