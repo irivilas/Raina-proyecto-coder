@@ -71,6 +71,12 @@ body {
 }
 
 /** header **/
+
+
+nav {
+    grid-area: nav;
+
+}
 header {
     background-color: #AEADD2;
     top: 0;
@@ -103,12 +109,6 @@ header nav a {
     color: black;
 
 }
-
-nav {
-    grid-area: nav;
-
-}
-
 
 main {
     grid-area: main;
