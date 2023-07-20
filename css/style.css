@@ -1,5 +1,4 @@
-** selector universal **/
-* {
+** selector universal **/ * {
     margin: 0;
     padding: 0%;
 }
@@ -15,15 +14,15 @@ body {
         "nav main main"
         "nav main main"
         "nav footer footer";
-        min-height: 100vh;
-        column-gap: 20px;
-        row-gap: 10px;
+    min-height: 100vh;
+    column-gap: 20px;
+    row-gap: 10px;
 
 }
 
 /** Tablet hasta 1024 **/
 @media (max-width: 1024px) {
-    body{
+    body {
         grid-template-columns: 10% 1fr 10%;
         grid-template-rows: 100px 1fr 1fr 10px;
         grid-template-areas:
@@ -31,24 +30,27 @@ body {
             "nav main main "
             "nav footer footer "
             "nav footer footer ";
+
     }
 }
 
 /* mobile: hasta 768 */
 
 @media (max-width: 425px) {
-    body{
+    body {
         grid-template-columns: auto;
         grid-template-rows: 150px 1fr 1fr 10%;
         grid-template-areas:
-        " header "
-        " nav "
-        " main "
-        "footer ";
-            height: 140vh;
+            " header "
+            " nav "
+            " main "
+            "footer ";
+        height: 140vh;
+        
     }
-    
+
 }
+
 /** button **/
 
 .button {
@@ -76,6 +78,7 @@ nav {
     grid-area: nav;
 
 }
+
 header {
     background-color: #AEADD2;
     top: 0;
@@ -170,8 +173,9 @@ h2 {
 
 .cardContainer {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: 60px;
     max-width: 1400px;
 }
 
@@ -185,7 +189,7 @@ h2 {
     padding: 30px;
     margin: 0 20px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -214,7 +218,7 @@ footer>div {
 }
 
 .footerRedes {
-    width: 15%;
+    width: 20%;
 }
 
 .footerRedes ul {
@@ -226,16 +230,14 @@ footer>div {
 .footerEnlaces a {
     text-decoration: none;
     color: black;
-
 }
 
 .footerColumns {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
     padding-bottom: 20px;
-
-
 }
 
 .newsletter form {
