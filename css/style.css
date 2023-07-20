@@ -8,48 +8,47 @@
 body {
     font-family: 'Quicksand', sans-serif;
     display: grid;
-    grid-template-columns: 100px 1fr 200px;
+    grid-template-columns: 10px 1fr 20px;
     grid-template-rows: 100px 300px 1fr 20px;
     grid-template-areas:
         "nav header header"
         "nav main main"
         "nav main main"
         "nav footer footer";
+        min-height: 100vh;
+        column-gap: 20px;
+        row-gap: 10px;
 
 }
 
-
-@media (max-width: 768px) {
+/** Tablet hasta 1024 **/
+@media (max-width: 1024px) {
     body{
         grid-template-columns: 10% 1fr 10%;
-        grid-template-rows: 150px 2fr 2fr 10px;
+        grid-template-rows: 100px 1fr 1fr 10px;
         grid-template-areas:
             "nav header header "
             "nav main main "
-            "nav main main "
             "nav footer footer "
             "nav footer footer ";
-
     }
 }
+
+/* mobile: hasta 768 */
 
 @media (max-width: 425px) {
     body{
-        grid-template-columns: 10% 1fr 10%;
-        grid-template-rows: 150px 2fr 2fr 10%;
+        grid-template-columns: auto;
+        grid-template-rows: 150px 1fr 1fr 10%;
         grid-template-areas:
-            " header "
-            " nav "
-            " main "
-            "footer ";
+        " header "
+        " nav "
+        " main "
+        "footer ";
+            height: 140vh;
     }
-   
-
     
 }
-
-
-
 /** button **/
 
 .button {
@@ -85,8 +84,6 @@ header {
     justify-content: space-between;
     align-items: center;
     grid-area: header;
-
-
 }
 
 header .logo {
@@ -115,8 +112,6 @@ main {
 }
 
 /** Portada **/
-
-
 #portada {
     height: 80vh;
     display: flex;
@@ -192,8 +187,6 @@ h2 {
     text-align: center;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-
 }
 
 
@@ -249,7 +242,6 @@ footer>div {
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 
 .newsletter input {
@@ -261,7 +253,6 @@ footer>div {
 .newsletter button {
     margin-top: 15px;
     border: none;
-
 }
 
 .copyright {
