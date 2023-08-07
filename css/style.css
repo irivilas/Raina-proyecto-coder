@@ -29,6 +29,7 @@ body {
     }
     header nav ul { flex-direction: column;
     }
+    .cardContainer{ flex-direction: row;}
 
 }
 
@@ -44,9 +45,11 @@ body {
             " main "
             "footer ";
         height: 140vh;
+        
     }
-    header nav ul { flex-direction: column;
+    header nav ul { flex-direction: column; 
     }
+    .cardContainer{ flex-direction: column;}
 }
 
 /** button **/
