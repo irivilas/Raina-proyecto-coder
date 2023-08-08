@@ -16,41 +16,6 @@ body {
     row-gap: 10px;
 }
 
-/** Tablet hasta 1024 **/
-@media (max-width: 1024px) {
-    body {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-        column-gap: 20px;
-        row-gap: 10px;  
-    }
-    header nav ul { flex-direction: column;
-    }
-    .cardContainer{ flex-direction: row;}
-
-}
-
-/* mobile: hasta 768 */
-
-@media (max-width: 425px) {
-    body {
-        grid-template-columns: auto;
-        grid-template-rows: 150px 1fr 1fr 10%;
-        grid-template-areas:
-            " header "
-            " nav "
-            " main "
-            "footer ";
-        height: 140vh;
-        
-    }
-    header nav ul { flex-direction: column; 
-    }
-    .cardContainer{ flex-direction: column;}
-}
 
 /** button **/
 
@@ -128,6 +93,7 @@ main {
 #portada h1 {
     text-align: center;
     font-size: 2rem;
+
 }
 
 #portada p {
@@ -148,6 +114,7 @@ main {
     display: inline-block;
     margin-left: 10px
 }
+
 
 h2 {
     color: #AEADD2
@@ -174,13 +141,12 @@ h2 {
 
 .cardContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     margin-top: 60px;
     max-width: 1487px;
     
 }
-
 
 .cardServicio {
     background-color: rgb(136, 134, 134);
@@ -280,4 +246,39 @@ footer>div {
     height: 200px;
     background-color: lightcoral;
 
+}
+
+/** Tablet hasta 1024 **/
+@media (max-width: 1024px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        column-gap: 20px;
+        row-gap: 10px;  
+    }
+    header nav ul { flex-direction: column;
+    }
+    .cardContainer{ flex-direction: column;}
+
+}
+
+/* mobile: hasta 768 */
+
+@media (max-width: 425px) {
+    body {
+        grid-template-columns: auto;
+        grid-template-rows: 150px 1fr 1fr 10%;
+        grid-template-areas:
+            " header "
+            " nav "
+            " main "
+            "footer ";
+        height: 140vh;
+    }
+    header nav ul { flex-direction: column; 
+    }
+    .cardContainer{ flex-direction: column;}
 }
